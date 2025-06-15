@@ -1,0 +1,26 @@
+<p>employee-detail works!</p>
+<div class="container mt-4" *ngIf="employee">
+    <h3>Employee Detail</h3>
+    <form *ngIf="employee" (ngSubmit)="save()">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input [(ngModel)]="employee.name" name="name" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input [(ngModel)]="employee.email" name="email" type="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Position</label>
+        <input [(ngModel)]="employee.position" name="position" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Salary</label>
+        <input [(ngModel)]="employee.salary" name="salary" type="number" class="form-control" required />
+      </div>
+      </form>
+      </div>
+      
+  
+    
+  
